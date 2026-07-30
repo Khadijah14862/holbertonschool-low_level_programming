@@ -1,6 +1,6 @@
 # Simple Calculator
 
-A terminal-based calculator program written in C.
+A terminal-based interactive calculator written in C.
 
 ## Compilation
 
@@ -20,8 +20,19 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 
 ## Numeric Behavior
 
-The current skeleton program reads an integer menu option.
+The calculator uses double-precision decimal numbers.
+
+All arithmetic operations accept integers or decimal values.
+
+Examples:
+
+- 10 + 25 produces 35
+- 10 / 4 produces 2.5
 
 ## Known Limitations
 
-This task only displays the menu and supports quitting with option 0.
+The mandatory version expects numeric input.
+
+Non-numeric input such as letters or words is not handled.
+
+Division by zero is rejected with an error message.
