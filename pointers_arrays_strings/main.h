@@ -24,4 +24,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 int is_separator(char c);
 char *leet(char *);
+char *_memset(char *s, char b, unsigned int n);
 #endif
