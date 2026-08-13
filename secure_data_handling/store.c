@@ -84,10 +84,10 @@ int store_delete(store_t *st, const char *id, session_t **out)
 			else
 				st->head = cur->next;
 
-			if (out)
-				*out = cur->sess;
-
-			session_destroy(cur->sess);
+                        if (out)
+                                *out = cur->sess;
+                        else
+                                session_destroy(cur->sess);
 			free(cur);
 			return 1;
 		}
